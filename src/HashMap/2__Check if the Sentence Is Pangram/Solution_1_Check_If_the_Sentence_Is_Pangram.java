@@ -1,7 +1,7 @@
 import java.util.HashSet;
 import java.util.Set;
 
-public class Solution_Check_If_the_Sentence_Is_Pangram {
+public class Solution_1_Check_If_the_Sentence_Is_Pangram {
     public static void main(String[] args) {
       String sentence = "thequickbrownfoxjumpsoverthelazydog";
       String sentence1 = "leetcode";
