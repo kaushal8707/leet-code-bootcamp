@@ -1,12 +1,11 @@
-package array_implementation;
 
 import java.util.NoSuchElementException;
 
-public class Stack {
+public class Stack1 {
     int arr[];
     int top;               // Index of the top element
     int capacity;
-    Stack(int size){
+    Stack1(int size){
         capacity = size;
         top = -1;         // Stack is initially empty
         arr = new int[capacity];
@@ -53,7 +52,7 @@ public class Stack {
     }
 
     public static void main(String[] args) {
-        Stack stack = new Stack(5);                             //stack size : 5
+        Stack1 stack = new Stack1(5);                             //stack size : 5
         stack.push(10);
         stack.push(20);
         stack.push(30);

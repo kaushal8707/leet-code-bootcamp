@@ -1,4 +1,3 @@
-package linkedlist_implementation;
 public class Stack {
     Node top;                          // Represents the top of the stack
     int size;                          // Stores the current size of the stack
