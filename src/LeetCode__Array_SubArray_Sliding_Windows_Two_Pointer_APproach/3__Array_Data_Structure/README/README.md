@@ -12,7 +12,7 @@
 ![img_1.png](img_1.png)
 
 
- # Array DisAdvantage:
+ # Array Disadvantage:
 
    1. Fixed Size
         we give the size of an array during declaration.

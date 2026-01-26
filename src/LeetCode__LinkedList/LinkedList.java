@@ -47,6 +47,20 @@ public class LinkedList {
         prev.next = temp.next;                             // Unlink the node from linked list
     }
 
+    public Node deleteSpecificNode(Node n) {
+        Node current=head;
+        if(current==null){
+            System.out.println("list is empty!!");
+        }
+        while(current.next!=null ){
+            if(current.next.data==n.data){
+                current.next=current.next.next;
+            }
+            current=current.next;
+        }
+        return head;
+    }
+
     /** Method Insertion at a Specific Position/Index */
     public void insertAtIndex(int data, int index){
         Node newNode = new Node(data);
@@ -130,6 +144,9 @@ public class LinkedList {
         linkedList.deleteAtBeginning();
         linkedList.deleteNode(12);
         linkedList.deleteAtPosition(2);
+
+        linkedList.printLinkedList();
+        linkedList.deleteSpecificNode(new Node(222));
         linkedList.printLinkedList();
 
     }

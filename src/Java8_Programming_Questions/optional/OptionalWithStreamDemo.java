@@ -1,7 +1,7 @@
 package optional;
 
-import com.java.selfdeveloped.spring.java8.api.model.Customer;
-import com.java.selfdeveloped.spring.java8.api.model.EKartDataBase;
+import model.Customer;
+import model.EKartDataBase;
 
 public class OptionalWithStreamDemo {
 

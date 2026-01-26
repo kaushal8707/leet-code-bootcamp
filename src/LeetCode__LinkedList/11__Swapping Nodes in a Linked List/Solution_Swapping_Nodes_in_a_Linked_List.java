@@ -3,7 +3,7 @@ public class Solution_Swapping_Nodes_in_a_Linked_List {
     public ListNode swapNodes(ListNode head, int k) {
         ListNode first = head;
         ListNode second = head;
-        ListNode current = head;
+//        ListNode current = head;
         // Find the k-th node from the beginning
         for (int i = 1; i < k; i++) {
             first = first.next;

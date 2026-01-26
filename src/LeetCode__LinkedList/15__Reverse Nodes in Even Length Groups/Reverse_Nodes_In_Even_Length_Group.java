@@ -12,7 +12,7 @@ public class Reverse_Nodes_In_Even_Length_Group {
             int currentGroupSize = 1;
 
             // Find the end of the current group and its actual size
-            while (groupEnd.next != null && currentGroupSize < groupLength) {
+            while (groupEnd.next != null && currentGroupSize < groupLength) {  // 1 2 3 4 5 6 7 8 9 10
                 groupEnd = groupEnd.next;
                 currentGroupSize++;
             }

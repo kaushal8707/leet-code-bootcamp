@@ -1,9 +1,9 @@
 package optional;
 
+import model.Customer;
+
 import java.util.Arrays;
 import java.util.Optional;
-
-import com.java.selfdeveloped.spring.java8.api.model.Customer;
 
 public class OptionalDemo {
 	public static void main(String[] args) throws Throwable {

@@ -25,7 +25,7 @@ solution-
   
 # condition is : 1 zeros or 0 zeros
 
-here windows is sum or right element so, 
+here windows is sum of right element so, 
 if length is 4 and sum is 4 in a window which mean no zero came in a windows
 if length is 4 and sum is 3 in a window which mean maximum one zero came in a windows
 

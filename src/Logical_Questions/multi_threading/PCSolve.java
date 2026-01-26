@@ -9,7 +9,7 @@ public class PCSolve {
 	{
 	  List<Integer> list=new ArrayList<Integer>();
       Consumer consumer=new Consumer(list);
-      Producer producer=new Producer(consumer,list);
+      Producer producer=new Producer(list,consumer);
       Thread c=new Thread(consumer, "consumer");
       Thread p=new Thread(producer, "producer");
       c.start();

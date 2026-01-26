@@ -46,12 +46,12 @@ public class Iterative_Palindrome_Linked_List {
     private static Node reverseList(Node head) {
         Node prev = null;
         Node current = head;
-        Node next = null;
+        Node nextNode = null;
         while (current != null) {
-            next = current.next; // Store next node
+            nextNode = current.next; // Store next node
             current.next = prev; // Reverse current node's pointer
             prev = current;      // Move prev to current node
-            current = next;      // Move current to next node
+            current = nextNode;      // Move current to next node
         }
         return prev; // prev is now the new head of the reversed list
     }

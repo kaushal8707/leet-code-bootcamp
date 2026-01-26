@@ -51,6 +51,12 @@ public class Solution_Remove_Linked_List_Elements {
         head.next.next.next = new ListNode(3);
         head.next.next.next.next = new ListNode(4);
         head.next.next.next.next.next = new ListNode(6);
+        System.out.print("Original Linked List: ");
+        list.print(head);  //head
+        // Remove elements from a LinkedList for a given value
+        head = list.removeElements(head, val);   //head, val1
+        System.out.print("Remove elements from a LinkedList for a given value: ");
+        list.print(head);
 
         //second example
         // Create a sample linked list: 7 -> 7 -> 7 -> 7
@@ -58,15 +64,11 @@ public class Solution_Remove_Linked_List_Elements {
         head1.next = new ListNode(7);
         head1.next.next = new ListNode(7);
         head1.next.next.next = new ListNode(7);
-
-
         System.out.print("Original Linked List: ");
-        list.print(head);  //head1
-
+        list.print(head1);  //head1
         // Remove elements from a LinkedList for a given value
-        head = list.removeElements(head, val);   //head1, val1
-
+        head1 = list.removeElements(head1, val1);   //head1, val1
         System.out.print("Remove elements from a LinkedList for a given value: ");
-        list.print(head);
+        list.print(head1);
     }
 }

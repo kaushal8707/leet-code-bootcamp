@@ -7,6 +7,7 @@ public class TriggeredEvent implements Runnable
     {
         this.barrier_point_num=barrier_point;
     }
+    TriggeredEvent(){}
     @Override
     public void run()
     {

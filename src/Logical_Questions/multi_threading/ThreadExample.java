@@ -1,5 +1,5 @@
 package multi_threading;
-class Task extends Thread
+class TaskA extends Thread
 {
     @Override
     public void run()
@@ -17,7 +17,7 @@ public class ThreadExample extends Thread
 {
     public static void main(String[] args) {
         System.out.println("Main thread started");
-        Task t1=new Task();
+        TaskA t1=new TaskA();
         t1.start();
         System.out.println("Main thread ended");
 

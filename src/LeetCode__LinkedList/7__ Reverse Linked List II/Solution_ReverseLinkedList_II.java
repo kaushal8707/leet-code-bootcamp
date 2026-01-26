@@ -17,7 +17,7 @@ public class Solution_ReverseLinkedList_II {
         ListNode current = previous.next;
         // Reverse the sublist one node at a time
         // The number of reversals needed is (right - left)
-        for(int i=0; i < right - left; i++){
+        for(int i=0; i < right - left; i++){             // 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8    l=3, r=7
             ListNode nextNode = current.next; // The node to be moved
             current.next = nextNode.next;     // 'curr' links to the node after 'nextNode'
             nextNode.next = previous.next;     // 'nextNode' links to the current first node of the sublist
@@ -35,15 +35,18 @@ public class Solution_ReverseLinkedList_II {
     }
     public static void main(String[] args) {
         Solution_ReverseLinkedList_II list = new Solution_ReverseLinkedList_II();
-        int left = 2;  //1
-        int right = 4;  // 1
+        int left = 3;  //1
+        int right = 7;  // 1
 
-        // Create a sample linked list: 1 -> 2 -> 3 -> 4 -> 5
+        // Create a sample linked list: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7 -> 8
         ListNode head = new ListNode(1);
         head.next = new ListNode(2);
         head.next.next = new ListNode(3);
         head.next.next.next = new ListNode(4);
         head.next.next.next.next = new ListNode(5);
+        head.next.next.next.next.next = new ListNode(6);
+        head.next.next.next.next.next.next = new ListNode(7);
+        head.next.next.next.next.next.next.next = new ListNode(8);
 
         System.out.print("Original Linked List: ");
         list.print(head);

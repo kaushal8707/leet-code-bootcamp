@@ -2,7 +2,7 @@ public class Finding_the_Longest_Streak_of_Ones_with_One_Flip {
     public static void main(String[] args) {
         int[] nums = {1,0,1,1,0};
         int[] nums1 = {1,0,1,1,0,1,1};
-        int maxConsecutiveOnes = findMaxConsecutiveOnes(nums);
+        int maxConsecutiveOnes = findMaxConsecutiveOnes(nums1);
         System.out.println(maxConsecutiveOnes);
     }
 
